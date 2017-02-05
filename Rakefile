@@ -34,6 +34,9 @@ namespace :sync do
       "https://github.com/daplayer/daplayer/tree/master/#{file}"
     end
 
+    class_template = File.read('_templates/class.md')
+    index_template = File.read('_templates/index.md')
+
     files   = []
     folder  = '/Users/robin/Code/player/'
     pattern = File.join(folder, 'app/**/*.js')
@@ -55,14 +58,13 @@ namespace :sync do
       `#{binary} build #{file} -f md -o #{dest_file}.nil --shallow`
 
       File.open(dest_file, 'w') do |f|
-        f.puts %(---)
-        f.puts %(title: Documentation for <code>#{camel_case(components[-1].sub('.js', ''))}</code>)
-        f.puts %(layout: page)
-        f.puts %(locale: en)
-        f.puts %(section: documentation)
-        f.puts %(description: <span class="octicon octicon-mark-github"></span> ) +
-               %(<a href="#{github(relative_file)}">See the #{relative_file} file on GitHub</a>)
-        f.puts %(---)
+        values = {
+          klass:         camel_case(components[-1].sub('.js', '')),
+          github_path:   github(relative_file),
+          relative_file: relative_file
+        }
+
+        f.puts(class_template % values)
 
         File.foreach(dest_file + ".nil") do |line|
           if line.start_with?('# ')
@@ -89,27 +91,11 @@ namespace :sync do
     end
 
     File.open('documentation/api/index.md', 'w') do |f|
-      f.puts "---"
-      f.puts "title: API Documentation"
-      f.puts "locale: en"
-      f.puts "layout: page"
-      f.puts "section: documentation"
-      f.puts "description: The API documentation for the different classes that are present in the DaPlayer's code base."
-      f.puts "---\n\n\n"
-
-      f.puts "This section gathers the documentation of the different internal"
-      f.puts "classes used inside DaPlayer. This documentation has been automatically"
-      f.puts "generated from the code.\n\n"
-
-      f.puts "> **Note** : since these files are automatically generated, if you"
-      f.puts "> are willing to improve or fix something, edit the JavaScript file"
-      f.puts "> in the main respository rather than any of these.\n\n"
-
-      f.puts "Here are the different classes that are available:\n"
-
-      files.each do |(klass, path)|
-        f.puts "* [#{klass}](#{path.sub('.js', '.html')})"
+      links = files.map do |(klass, path)|
+        "* [#{klass}](#{path.sub('.js', '.html')})"
       end
+
+      f.puts(index_template % { links: links.join("\n")})
     end
   end
 end

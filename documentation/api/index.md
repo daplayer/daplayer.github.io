@@ -6,7 +6,6 @@ section: documentation
 description: The API documentation for the different classes that are present in the DaPlayer's code base.
 ---
 
-
 This section gathers the documentation of the different internal
 classes used inside DaPlayer. This documentation has been automatically
 generated from the code.
@@ -16,6 +15,7 @@ generated from the code.
 > in the main respository rather than any of these.
 
 Here are the different classes that are available:
+
 * [Analytics](analytics.html)
 * [Application](application.html)
 * [Controller](base/controller.html)
