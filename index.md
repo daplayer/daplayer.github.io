@@ -93,8 +93,7 @@ locale: en
     <h2>Create Your Own Playlists</h2>
 
     <p>You can build your own playlists with musics coming from any of the supported
-      locations and you can easily export them to play them with other media players
-      or share them with people.
+      locations.
     </p>
   </div>
 </div>
