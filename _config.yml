@@ -3,26 +3,26 @@ baseurl: ""
 url: "http://daplayer.github.io"
 version: 1.0.0.beta
 navs:
-  - title:
+  download:
+    title:
       en: Download
       fr: Téléchargement
     href:
       en: /download/
       fr: /fr/telechargement/
-    section: download
     icon: desktop-download
-  - title:
+  documentation:
+    title:
       en: Documentation
       fr: Documentation
-    section: documentation
     href:
       en: /documentation/
       fr: /fr/documentation/
     icon: book
-  - title:
+  souce-code:
+    title:
       en: Source Code
       fr: Code Source
-    section: source-code
     href:
       en: "https://github.com/daplayer/daplayer"
       fr: "https://github.com/daplayer/daplayer"

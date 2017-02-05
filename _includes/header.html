@@ -30,16 +30,30 @@
           </a>
         </div>
 
+        <div class="locale">
+          <div class="icon">
+            <img src="/images/lang.svg">
+          </div>
+
+          <div class="text">
+            {% if page.locale == 'en' %}
+              en | <a href="{{ site.navs[page.section].href['fr'] | default: '/fr' }}">fr</a>
+            {% else %}
+              <a href="{{ site.navs[page.section].href['en'] | default: '/' }}">en</a> | fr
+            {% endif %}
+          </div>
+        </div>
+
         <div class="nav">
           <ul>
             {% for link in site.navs %}
               <li>
-                {% if page.section == link.section %}
-                  <a href="{{ link.href[page.locale] }}" class="active">
+                {% if page.section == link[0] %}
+                  <a href="{{ link[1].href[page.locale] }}" class="active">
                 {% else %}
-                  <a href="{{ link.href[page.locale] }}">
+                  <a href="{{ link[1].href[page.locale] }}">
                 {% endif %}
-                  <span class="octicon octicon-{{ link.icon }}"></span> &nbsp; {{ link.title[page.locale] }}
+                  <span class="octicon octicon-{{ link[1].icon }}"></span> &nbsp; {{ link[1].title[page.locale] }}
                 </a>
               </li>
             {% endfor %}
