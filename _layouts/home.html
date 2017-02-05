@@ -1,0 +1,65 @@
+{% include header.html %}
+
+<div class="showcase">
+  <div class="container">
+    <div class="window">
+      <div class="slide active" data-slide="1">
+        <img src="/images/soundcloud.png">
+      </div>
+
+      <div class="slide hidden" data-slide="2">
+        <img src="/images/youtube.png">
+      </div>
+
+      <div class="slide hidden" data-slide="3">
+        <img src="/images/local.png">
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="description active" data-slide="1">
+        <h2>{{ site.home.sc_title }}</h2>
+
+        <p>{{ site.home.sc_desc }}</p>
+      </div>
+
+      <div class="description hidden" data-slide="2">
+        <h2>{{ site.home.yt_title }}</h2>
+
+        <p>{{ site.home.yt_desc }}</p>
+      </div>
+
+      <div class="description hidden" data-slide="3">
+        <h2>{{ site.home.local_title }}</h2>
+
+        <p>{{ site.home.local_desc }}</p>
+      </div>
+
+      <div class="switch active" data-slide="1"></div>
+      <div class="switch" data-slide="2"></div>
+      <div class="switch" data-slide="3"></div>
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <div class="container">
+    <a href="/download/" class="button">
+      <div class="icon">
+        <span class="octicon octicon-desktop-download"></span>
+      </div>
+
+      <strong>Download <span class="os-placeholder"></span></strong>
+      Version {{ site.version }}
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  {{ content }}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/home.js"></script>
+
+{% include footer.html %}

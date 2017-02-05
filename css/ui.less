@@ -1,0 +1,214 @@
+// +-------------------------------+
+// | DON'T DIRECTLY EDIT THIS FILE |
+// +-------------------------------+
+//
+// This file is composed of elements directly imported
+// from the DaPlayer main repository. It is just used
+// from documentation purposes to illustrate explanations.
+.left { float: left; }
+.right { float: right; }
+.clearer { clear: both; }
+
+form {
+  label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    border: 1px solid @light-purple;
+    border-radius: 2px;
+    height: 1.5em;
+    padding: 5px 10px;
+    margin: 0.5em;
+    width: 400px;
+  }
+
+  input[type="text"]:disabled {
+    background: lighten(@light-purple, 5%);
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    margin: 0 0 0.5em 1em;
+  }
+
+  input[type="radio"] + label,
+  input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+    white-space: pre;
+  }
+
+  input[type="radio"] + label:after,
+  input[type="checkbox"] + label:after {
+    content: '\A';
+  }
+}
+
+
+.box {
+  background: white;
+  border: 1px solid @thiner-blue-grey;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px fade(@darkest-purple, 20%);
+  color: @base-color;
+  display: block;
+  margin: 0 20px 20px 28px;
+  padding: 10px;
+  position: relative;
+
+  h2 { margin-bottom: 0.2em; }
+  h3 { margin-top: 0; }
+}
+
+
+.dialog {
+  .box();
+  margin: auto;
+  max-height: ~"calc(90% - 65px)";
+  width: 80%;
+  overflow-y: scroll;
+  padding: 10px;
+
+  h2 {
+    margin-top: 0px;
+    border-bottom: 1px solid @light-purple;
+    color: @dark-grey;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid @light-purple;
+  }
+
+  p {
+    margin-bottom: 5px;
+    padding: 0px 10px;
+  }
+
+  label {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    margin-top: 0.5em;
+
+    & + label {
+      display: inline-block;
+      width: auto;
+    }
+  }
+
+  input[type="submit"], input[type="reset"] {
+    float: right;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .button.download {
+    display: block!important;
+    height: 40px!important;
+    padding: 5px 12px 5px 12px!important;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #soundcloud_download, #youtube_download {
+    width: ~"calc(100% - 80px)";
+  }
+
+  &.tag {
+    .left, .right {
+      width: 50%;
+    }
+
+    .right {
+      margin-top: 1em;
+    }
+
+    .left {
+      margin-top: 46px;
+      text-align: center;
+    }
+
+    &.soundcloud, &.local {
+      img {
+        cursor: auto;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+      }
+    }
+
+    &.youtube {
+      img {
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    .flat_button {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &.add_to_playlist {
+    .items li, .new_item {
+      border-bottom: 1px solid @light-purple;
+      height: @li-music-height;
+    }
+
+    .items li {
+      padding: 10px 5px;
+      line-height: @li-music-height;
+    }
+
+    .new_item {
+      margin-left: 40px;
+      overflow: hidden;
+      padding-left: 2.5em;
+
+      input[type="text"] {
+        border: 0;
+        height: @li-music-height - 10px;
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.tiny_button {
+  background: @thiner-grey;
+  border: 1px solid @grey;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  padding: 7px 10px;
+
+  &:hover {
+    background: @grey;
+    border: 1px solid darken(@grey, 3%);
+  }
+}
+
+.flat_button {
+  .tiny_button();
+  color: @base-color;
+  width: auto;
+}

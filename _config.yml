@@ -1,0 +1,34 @@
+title: DaPlayer - Listen to your SoundCloud, YouTube and local musics
+baseurl: ""
+url: "http://daplayer.github.io"
+version: 1.0.0.beta
+navs:
+  - title: Download
+    href: /download/
+    section: download
+    icon: desktop-download
+  - title: Documentation
+    section: documentation
+    href: /documentation/
+    icon: book
+  - title: Source Code
+    section: source-code
+    href: "https://github.com/daplayer/daplayer"
+    icon: mark-github
+
+# Home translations
+home:
+  sc_title: Listen to your SoundCloud musics ...
+  sc_desc: Your stream, favorites and playlists are automatically synced so you can listen to your whole SoundCloud collection ...
+  yt_title: ... Watch YouTube videos ...
+  yt_desc: Your YouTube collection is available as well so you can just listen to your favorite musics or switch to the video mode and enjoy the clip !
+  local_title: ... Or enjoy your local library !
+  local_desc: Your local library will be properly organized as well with your singles and albums ! MP3, Wav, Ogg and M4A/AAC are supported at the moment.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: javascript

@@ -1,0 +1,111 @@
+.showcase {
+  height: 530px;
+  padding-top: 40px;
+
+  .window {
+    height: 350px;
+    width: 603px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    .slide {
+      height: 100%;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      position: absolute;
+    }
+  }
+
+  .information {
+    text-align: center;
+
+    .description {
+      margin: auto;
+      text-align: center;
+      text-shadow: 0 -2px 0 fade(#264678, 75%);
+      width: 60%;
+
+      h2 { margin-bottom: 0; }
+    }
+
+    .switch {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #FFFFFF;
+      border-radius: 100%;
+      cursor: pointer;
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin-right: 10px;
+
+      &:hover, &.active {
+        background: #FFFFFF;
+      }
+    }
+  }
+}
+
+.banner {
+  background: @light-purple;
+  border-bottom: 1px solid @smooth-purple;
+  height: 80px;
+  overflow: hidden;
+  padding-top: 15px;
+  margin-bottom: 1em;
+
+  .button {
+    display: block;
+    height: 45px;
+    width: 250px;
+    margin: 0 auto;
+
+    .icon {
+      float: left;
+      height: 100%;
+      width: 30px;
+      padding: 5px 10px;
+      margin-right: 10px;
+
+      .octicon {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.feature {
+  margin-top: 1em;
+
+  .icon {
+    background: lighten(@darkest-purple, 55%);
+    border: 1px solid @smooth-purple;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px transparentize(@darkest-purple, 0.8);
+    color: white;
+    height: 75px;
+    width: 100px;
+    margin: auto;
+    padding: 25px 0 0 0;
+    text-align: center;
+
+    .octicon {
+      color: @smooth-purple;
+      font-size: 45px;
+    }
+  }
+
+  .content { text-align: center; }
+}
+
+.telescope {
+  padding-top: 95px;
+  text-align: center;
+
+  .octicon { font-size: 80px; }
+}
