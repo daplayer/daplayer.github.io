@@ -64,26 +64,26 @@ You should be able to:
 
 The source code of the project is available on GitHub:
 
-~~~
+~~~bash
 $ git clone https://github.com/daplayer/daplayer
 $ cd daplayer
 ~~~
 
 Then you can install the dependencies:
 
-~~~
+~~~bash
 $ make install
 ~~~
 
 You can run the application with:
 
-~~~
+~~~bash
 $ yarn start
 ~~~
 
 Then, you can create a new Git branch to host your changes and check it out:
 
-~~~
+~~~bash
 $ git checkout -b my-new-feature
 ~~~
 
@@ -333,13 +333,13 @@ If you are willing to send a pull request to make your change available directly
 in DaPlayer, you'll need to make sure that your patch is looking good and that
 all the tests are passing. To run the tests, you can run:
 
-~~~
+~~~bash
 $ make test
 ~~~
 
 Then, if everything is fine, you should commit your changes in Git:
 
-~~~
+~~~bash
 $ git add .
 $ git commit
 ~~~
@@ -347,7 +347,7 @@ $ git commit
 Make sure that you wrote a [good commit message](http://chris.beams.io/posts/git-commit/), then you can fork DaPlayer on GitHub and change the remote source
 of the repository to your fork, then push your changes:
 
-~~~
+~~~bash
 $ git remote remove origin
 $ git remote add origin https://github.com/[Your GitHub handle]/daplayer
 $ git push origin my-new-feature
