@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Download
-icon: desktop-download
 section: download
-description: Download the installer for your system or check for packages for your Linux distribution or how to build the software from source.
+description: Download the installer for your system or check for packages available for your Linux distribution.
 permalink: /download/
 locale: en
 ---
 
-DaPlayer tries to be compatible with Windows 7, 8, 8.1 and 10, with Mac OS X (only
-tested on Sierra but it should just work on older versions) and with Linux (it
+DaPlayer tries to be compatible with Windows 7, 8, 8.1 and 10, with macOS (only
+tested on Sierra but it should just work on older versions) and with GNU/Linux (it
 should basically work on any system where Chromium runs).
 
 ## Downloads for Windows
@@ -21,13 +20,13 @@ DaPlayer should work both on 32-bits and 64-bits Windows systems version 7 and u
   Download for Windows (7, 8, 8.1 or 10)
 </a>
 
-I do not own any Windows system so I do not use this piece of software on it. Even
-though DaPlayer is tested against Windows on AppVeyor, feel free to report any bug
-or provide a patch if you own such system. Thanks !
+I do not own any Windows system so I do not use this piece of software on it. Feel
+free [to report any bug](https://github.com/daplayer/daplayer/issues/new) or provide
+a patch if you own such system. Thanks !
 
 ## Downloads for macOS
 
-DaPlayer should work on macOS 10.9 and greater, it is only tested on Sierra
+DaPlayer should work on macOS 10.9 and greater; it is only tested on Sierra
 (10.12) though.
 
 <a href="https://github.com/daplayer/daplayer/releases/download/v{{ site.version }}.dmg" class="button">
@@ -39,12 +38,12 @@ DaPlayer should work on macOS 10.9 and greater, it is only tested on Sierra
 
 If you are a Linux user, different options are available to you. You can either:
 
-* Check whether the software is available through your distro's package
+* Check whether a package is available through your distro's package
   manager.
 * Download the latest version's tar-ball:
   * [x86](https://github.com/daplayer/daplayer/releases/download/v{{ site.version }}_x86.tar.gz)
   * [x64](https://github.com/daplayer/daplayer/releases/download/v{{ site.version }}_x64.tar.gz)
-* Or [Build from source](#build-from-source).
+* Or [build it from source](#build-from-source).
 
 DaPlayer should run fine on any X11 environment, at least where Chromium runs
 fine. There may be some tiny display glitches; feel free to report them.
@@ -72,7 +71,7 @@ $ sudo yum install daplayer
 ### For Arch Linux users
 
 DaPlayer is available through AUR (Arch Users Repository) so you can install
-it through Yaourt like:
+it through Yaourt like this:
 
 ~~~bash
 $ yaourt -S daplayer
@@ -80,5 +79,5 @@ $ yaourt -S daplayer
 
 ## Build from Source
 
-If you want to build DaPlayer from source because you didn't find any binary
-compatible with your platform, checkout the [Contributing](documentation/contributing.html) guide.
+If you want to build DaPlayer from source because, checkout the
+[Contributing](/documentation/contributing.html) guide for further information.
