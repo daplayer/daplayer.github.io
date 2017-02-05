@@ -1,0 +1,58 @@
+h1 { font-size: 1.75em;  }
+h2 { font-size: 1.5em;   }
+h3 { font-size: 1.25em;  }
+h4 { font-size: 1.115em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: darken(@dark-flat-purple, 4%);
+}
+
+h1 code {
+  font-size: 1em;
+}
+
+blockquote {
+  background-color: #e2eef9;
+  border: 1px solid #bac6d3;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #246;
+  margin: 1em 0;
+}
+
+.flash-error {
+  background-color: #fcdede;
+  border: 1px solid #d2b2b2;
+  border-radius: 3px;
+  color: #911;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 15px;
+  position: relative;
+
+  a {
+    color: darken(#911, 10%);
+    text-decoration: underline;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p a, li a {
+  text-decoration: underline;
+  color: @smooth-purple;
+
+  &:hover {
+    color: @dark-purple
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid @light-purple;
+}
+
