@@ -2,7 +2,7 @@ title: DaPlayer - Listen to your SoundCloud, YouTube and local musics
 
 baseurl: ""
 url: "http://daplayer.github.io"
-exclude: ["css/_*.less", README.md]
+exclude: ["css/_*.less", README.md, Rakefile, Gemfile, Gemfile.lock]
 
 version: 1.0.0.beta
 navs:
