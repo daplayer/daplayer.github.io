@@ -38,12 +38,12 @@ namespace :sync do
     index_template = File.read('_templates/index.md')
 
     files   = []
-    folder  = '/Users/robin/Code/player/'
+    folder  = File.expand_path(ENV['SOURCE'])
     pattern = File.join(folder, 'app/**/*.js')
     binary  = File.join(folder, 'node_modules/.bin/documentation')
 
     Dir.glob(pattern).each do |file|
-      relative_file = file[(folder.length)..-1]
+      relative_file = file[(file.index('app'))..-1]
       components    = relative_file.split('/')
       dest_dir      = File.join('documentation', 'api', components[1..-2].join('/'))
       dest_file     = File.join(dest_dir, components[-1]).sub('.js', '.md')
