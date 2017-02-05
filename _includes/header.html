@@ -21,7 +21,11 @@
             <img src="/images/logo.svg">
           </a>
 
-          <a href="/">
+          {% if page.locale == 'en' %}
+            <a href="/">
+          {% else %}
+            <a href="/fr/">
+          {% endif %}
             <h1>DaPlayer</h1>
           </a>
         </div>
@@ -31,11 +35,11 @@
             {% for link in site.navs %}
               <li>
                 {% if page.section == link.section %}
-                  <a href="{{ link.href }}" class="active">
+                  <a href="{{ link.href[page.locale] }}" class="active">
                 {% else %}
-                  <a href="{{ link.href }}">
+                  <a href="{{ link.href[page.locale] }}">
                 {% endif %}
-                  <span class="octicon octicon-{{ link.icon }}"></span> &nbsp; {{ link.title }}
+                  <span class="octicon octicon-{{ link.icon }}"></span> &nbsp; {{ link.title[page.locale] }}
                 </a>
               </li>
             {% endfor %}

@@ -3,32 +3,55 @@ baseurl: ""
 url: "http://daplayer.github.io"
 version: 1.0.0.beta
 navs:
-  - title: Download
-    href: /download/
+  - title:
+      en: Download
+      fr: Téléchargement
+    href:
+      en: /download/
+      fr: /fr/telechargement/
     section: download
     icon: desktop-download
-  - title: Documentation
+  - title:
+      en: Documentation
+      fr: Documentation
     section: documentation
-    href: /documentation/
+    href:
+      en: /documentation/
+      fr: /fr/documentation/
     icon: book
-  - title: Source Code
+  - title:
+      en: Source Code
+      fr: Code Source
     section: source-code
-    href: "https://github.com/daplayer/daplayer"
+    href:
+      en: "https://github.com/daplayer/daplayer"
+      fr: "https://github.com/daplayer/daplayer"
     icon: mark-github
 
 # Home translations
 home:
-  sc_title: Listen to your SoundCloud musics ...
-  sc_desc: Your stream, favorites and playlists are automatically synced so you can listen to your whole SoundCloud collection ...
-  yt_title: ... Watch YouTube videos ...
-  yt_desc: Your YouTube collection is available as well so you can just listen to your favorite musics or switch to the video mode and enjoy the clip !
-  local_title: ... Or enjoy your local library !
-  local_desc: Your local library will be properly organized as well with your singles and albums ! MP3, Wav, Ogg and M4A/AAC are supported at the moment.
+  sc_title:
+    en: Listen to your SoundCloud musics ...
+    fr: Écoutez vos musiques SoundCloud ...
+  sc_desc:
+    en: Your stream, favorites and playlists are automatically synced so you can listen to your whole SoundCloud collection ...
+    fr: Votre fil d'actualités, vos favoris et playlists sont synchronisés automatiquement ; vous pouvez donc écouter toute votre bibliothèque !
+  yt_title:
+    en: ... Watch YouTube videos ...
+    fr: ... Regardez des vidéos YouTube ...
+  yt_desc:
+    en: Your YouTube collection is available as well so you can just listen to your favorite musics or switch to the video mode and enjoy the clip !
+    fr: Votre collection YouTube est également disponible, vous pouvez donc écouter vos musiques ou passer en mode vidéo pour apprécier le clip !
+  local_title:
+    en: ... Or enjoy your local library !
+    fr: ... Ou apprécier la musique de votre ordinateur !
+  local_desc:
+    en: Your local library will be properly organized as well with your singles and albums ! MP3, Wav, Ogg and M4A/AAC are supported at the moment.
+    fr: Votre bibliothèques locale sera également correctement organisé avec vos singles et albums ! Les formats MP3, Wav, Ogg et M4A/ACC sont supportés.
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
   syntax_highlighter_opts:
     default_lang: javascript
