@@ -11,9 +11,17 @@ module Jekyll
     end
 
     def convert(content)
+      destination = File.expand_path(File.join(__dir__, '..', 'css', 'main.css'))
+
       content.gsub!("---", "")
       parser = Less::Parser.new
-      parser.parse(content).to_css(compress: true)
+      output = parser.parse(content).to_css(compress: true)
+
+      File.open(destination, 'w') do |f|
+        f.write output
+      end
+
+      return output
     end
   end
 end

@@ -45,12 +45,18 @@
 
 @titlebar-height:   43px;
 
-@import "css/button.less";
-@import "css/headers.less";
-@import "css/highlight.less";
-@import "css/home.less";
-@import "css/tables.less";
-@import "css/ui.less";
+// These ones aren't prefixed with `css/` because they
+// are regular imports.
+@import "css/_grid.less";
+@import "css/_normalize.less";
+@import "css/_octicons.less";
+
+@import "css/_button.less";
+@import "css/_headers.less";
+@import "css/_highlight.less";
+@import "css/_home.less";
+@import "css/_tables.less";
+@import "css/_ui.less";
 
 body {
   background: @light-grey;
