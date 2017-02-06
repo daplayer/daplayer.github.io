@@ -78,8 +78,7 @@ locale: en
     <h2>Tag Your Musics</h2>
 
     <p>DaPlayer has a built-in tagging support so you can customize the tags
-      of your audio files like the title or the cover file and if your musics
-      are properly tagged, you can do searches by author, genre, etc.
+      of your audio files like the title or the cover file.
     </p>
   </div>
 </div>

@@ -13,9 +13,6 @@ qui ne sont pas documentés ici, n'hésitez pas à le faire savoir ou à le corr
 
 ## Utilisation
 
-Here are some common guides that may be interesting if you want to correctly use
-DaPlayer or if you are looking for a particular feature/setting:
-
 Voici quelques guides qui peuvent être intéressant si vous voulez correctement
 utiliser DaPlayer ou si vous cherchez à utiliser une fonctionnalité ou une option
 en particulier:
