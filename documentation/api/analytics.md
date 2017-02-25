@@ -11,7 +11,7 @@ description: <span class="octicon octicon-mark-github"></span> <a href="https://
 Class responsible for managing the listening analytics
 inside the application.
 
-IndexedDB is used under the hood, checkout the `Database`
+IndexedDB is used under the hood. Checkout the `Database`
 class for further information. There's a table for each
 service (i.e. soundcloud, youtube, local).
 

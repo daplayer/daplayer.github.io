@@ -11,9 +11,9 @@ description: <span class="octicon octicon-mark-github"></span> <a href="https://
 This class manages the credentials used inside the
 application.
 
-It deal both with API credentials and the user's one.
+It both deals with API credentials and the user's one.
 The API ones are hard stored in this file and the
-user's one are managed through `localStorage`.
+user's ones are managed through `localStorage`.
 
 <hr>
 ## soundcloud
@@ -40,8 +40,8 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 <hr>
 ## read
 
-Read the user's credentials for a given service
-in the local storage or read from the default hash
+Reads the user's credentials for a given service
+in the local storage or reads from the default hash
 if the former isn't set.
 
 **Parameters**

@@ -24,7 +24,7 @@ compilation.
 -   `location` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The template's location.
 -   `context` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** The template's context.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## append
@@ -43,7 +43,7 @@ former shown.
 -   `location` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The template's location.
 -   `context` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** The template's context.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## compile
@@ -55,10 +55,10 @@ already been compiled, we just read it from the cache.
 
 -   `location` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The template's location.
 
-Returns **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** 
+Returns **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)**
 
 <hr>
-## partial
+## registerPartial
 
 Facility to define partials as Handlebars helpers. It
 compiles the given partial, render it and wrap inside
@@ -67,6 +67,6 @@ a Handlebars safe string.
 **Parameters**
 
 -   `location` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The partial's location.
--   `context` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context for rendering.
+-   `name` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The helper's name.
 
-Returns **Handlebars.SafeString** 
+Returns **null**

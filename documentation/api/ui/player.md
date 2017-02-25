@@ -126,28 +126,6 @@ Hides the loader for the current media.
 Returns **null** 
 
 <hr>
-## showEqualizer
-
-Shows an animated equalizer on the current playing action's
-link in the sidebar. Basically creates the element.
-
-Returns **null** 
-
-<hr>
-## startEqualizer
-
-Starts the animation of the different bars of the equalizer.
-
-Returns **null** 
-
-<hr>
-## pauseEqualizer
-
-Pauses the animation of the equalizer.
-
-Returns **null** 
-
-<hr>
 ## reset
 
 Short hand to reset the progress bar.

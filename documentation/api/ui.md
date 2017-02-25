@@ -11,7 +11,7 @@ description: <span class="octicon octicon-mark-github"></span> <a href="https://
 This class manages some elements of the user interface
 and contains methods that are related to it.
 
-You can also check out these classes for further informatio:
+You can also check out these classes for further information:
 
 -   Ui.Dialog
 -   Ui.Menu
@@ -30,7 +30,7 @@ loaded (e.g. sidebar).
 -   `only_sidebar` **\[Bool]** Whether to reload only the
                                    sidebar or not.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## render
@@ -68,7 +68,7 @@ extracted from the h-ref and properly delegated.
                               or the service/method one.
 -   `param` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)]** An eventual extra param.
 
-Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** 
+Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**
 
 <hr>
 ## loading
@@ -81,14 +81,14 @@ Shows the loader.
 -   `context` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)]** An eventual context to evaluate
                                 the translation.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## loaded
 
 Hide the loader.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## loadNextRecords
@@ -96,7 +96,7 @@ Returns **null**
 Function that loads new records once we hit the bottom
 of the page.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## share
@@ -106,9 +106,9 @@ Puts the media's URL in the clipboard.
 **Parameters**
 
 -   `id` **([Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) \| [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String))** The media's id.
--   `set`  
+-   `set`
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## tag
@@ -120,9 +120,9 @@ them for a local file.
 **Parameters**
 
 -   `id` **([Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) \| [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String))** The media's id.
--   `set`  
+-   `set`
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## downloadStart
@@ -135,7 +135,7 @@ and show the main download bar.
 -   `hash` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** A hash containing the media's
                             attributes.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## downloadEnd
@@ -148,7 +148,7 @@ hides the main download bar if necessary.
 -   `hash` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** A hash containing the media's
                             attributes.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## downloadProgress
@@ -160,7 +160,7 @@ Updates the download bars' progression.
 -   `id` **([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number))** The media's id.
 -   `percentage` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** The progression.
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## hideShadow
@@ -168,7 +168,7 @@ Returns **null**
 Hide the black transparent shadow and its inner element
 (i.e. the video player or the dialog box).
 
-Returns **null** 
+Returns **null**
 
 <hr>
 ## addToPlaylist
@@ -177,35 +177,25 @@ Displays a popup to add an element to a playlist.
 
 **Parameters**
 
--   `element` **$** The HTML node that represents
-                          the media we want to add to a
-                          playlist.
+-   `id` **([Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) \| [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String))** The record's id.
 
-Returns **null** 
+Returns **null**
 
 <hr>
-## dataShouldBeLoaded
+## pageSize
 
-Tells whether data should be loaded or not on the
-current page. It checks whether the container is
-fully filled or not.
+Tries to guess the number of records that should
+be loaded on the page.
 
-Returns **Bool** 
+**Parameters**
+
+-   `kind`
+
+Returns **Bool**
 
 <hr>
 ## scrollToPlayingElement
 
 Scrolls to the current playing element or playlist.
 
-Returns **null** 
-
-<hr>
-## animateHeight
-
-Animates the height of an element randomly.
-
-**Parameters**
-
--   `element` **$** The element to animate.
-
-Returns **null** 
+Returns **null**

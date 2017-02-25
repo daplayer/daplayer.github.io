@@ -54,7 +54,7 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 ## read
 
 Reads the configuration setting of a given section reading
-from the local storage or return the default value if unset.
+from the local storage or returning the default value if unset.
 
 **Parameters**
 
@@ -67,7 +67,7 @@ Returns **([Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 ## store
 
 Stores a given configuration setting in the local storage
-making sure that we don't erase the previous values.
+making sure that the previous values are kept.
 
 **Parameters**
 

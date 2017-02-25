@@ -9,3 +9,18 @@ description: <span class="octicon octicon-mark-github"></span> <a href="https://
 <hr>
 
 This class represents a SoundCloud activity.
+
+<hr>
+## icon
+
+Returns an accurate icon based on the type of activity.
+
+Returns **Handlebars.SafeString**
+
+<hr>
+## description
+
+Returns a translated description to tell the user the
+kind of activity and who did it.
+
+Returns **Handlebars.SafeString**

@@ -22,4 +22,13 @@ register all its event handlers).
 -   `on_ready` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)** The function to call once
                                   the application is ready.
 
-Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** 
+Returns **[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)**
+
+<hr>
+## ensurePathsExist
+
+Makes sure that we have the necessary files created when
+we run the application (e.g. for the first time or if
+the user accidentally deleted the "cache" folder).
+
+Returns **null**

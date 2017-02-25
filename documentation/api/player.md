@@ -16,8 +16,7 @@ The user interface is managed by the `Ui.Player` class.
 <hr>
 ## initialize
 
-Initializes all the necessary elements for audio analysis.
-These ones should be instantiated just once.
+Initializes all the necessary elements.
 
 Returns **null** 
 
@@ -139,17 +138,6 @@ Changes the playing mode for the current set.
 -   `mode` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The playing mode for the current set.
 
 Returns **null** 
-
-<hr>
-## sample
-
-Returns a random value from the array returned by the
-audio context's `getByteFrequencyData` method.
-
-This method is used to give an idea of the height of
-the equalizer bars.
-
-Returns **Float** 
 
 <hr>
 ## paused
