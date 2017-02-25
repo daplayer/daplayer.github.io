@@ -284,11 +284,10 @@ basically a classic MVC (Model-View-Controller) pattern.
 
 |  File         | Description                      |
 | ------------- | -------------------------------- |
-| models/       | Mixins of the model stack.       |
 | views/        | Contains the HandleBars views.   |
 | client.js     | Abstraction class to deal with API calls (SoundCloud and YouTube only). |
 | controller.js | The controller class which contains actions. Each action roughly load data from the model and render a view passing the data. |
-| helpers.js    | HandleBars helpers that are used inside the views (most of them are facilities to render partials). |
+| helpers.js    | HandleBars helpers that are used inside the views (meta and app only). |
 | model.js      | Abstraction class to fetch data (either tied to a service or the file system). |
 | player.js     | Handles callback registration for the service's medias. |
 | service.js    | Abstraction class to manage connection, authorization and some stuff specific to the service (e.g. downloading). |
